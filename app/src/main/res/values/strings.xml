@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Beer Book</string>
+    <string name="button_done">Concluir</string>
+    <string name="button_delete">Excluir</string>
+    <string name="tipo_da_cerveja">Tipo</string>
+    <string name="salvar">Salvar</string>
+    <string name="marca_cerveja">Marca</string>
+    <string name="obs_cerveja">Observação</string>
+    <string name="nota_cerveja">Nota</string>
+    <string name="salvar_cerveja">Salvar</string>
+    <string name="tirar_foto_cerveja">Tirar Foto</string>
+    <string name="valor_da_cerveja">Valor Pago</string>
+</resources>

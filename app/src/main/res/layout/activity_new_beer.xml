@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_new"
+            android:layout_width="140dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorLightGray"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_add_a_photo_48dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/lbl_marca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/img_new"
+                    android:text="Marca:"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="12dp"
+                    android:textAlignment="textEnd"/>
+
+                <EditText
+                    android:id="@+id/marca_beer"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:inputType="text" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/lbl_tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo:"
+                    android:textSize="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tipo_beer"
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/lbl_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pago R$:"
+                    android:textSize="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/valor_beer"
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lbl_nota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nota:"
+                    android:textSize="12dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nota_beer"
+                    android:layout_width="250dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </TableRow>
+
+            <TableRow>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/botao_new"
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:padding="6dp"
+                android:text="@string/salvar_cerveja"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
